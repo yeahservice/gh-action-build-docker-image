@@ -33,6 +33,7 @@ cd ./${FOLDER}
 sed -i '/#travis-uncomment/s/^#travis-uncomment //g' Dockerfile
 sed -i '/#build-uncomment/s/^#build-uncomment //g' Dockerfile
 cat MANIFEST
+
 docker build . -t "${IMAGE}:${VERSION}.${DATETIME}" -t "${IMAGE}:${VERSION}" --build-arg version="${VERSION}"
 
 if [[ $? -ne 0 ]]; then

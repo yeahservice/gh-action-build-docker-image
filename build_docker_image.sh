@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if [[ "$#" -ne 4 ]]; then
+if [[ "$#" -ne 5 ]]; then
   echo "Usage: $0 IMAGE FOLDER VERSION DATETIME FILE"
   echo "      Example: $0 keptn/api api/ 1.2.3 20210101101210 Dockerfile"
   echo "      Your command: $0 $*"

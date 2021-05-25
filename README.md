@@ -9,6 +9,7 @@ This repo provides a utility GitHub action for the [CI Workflow](https://github.
 * `DOCKER_FOLDER` (optional, defaults to './') - folder where Dockerfile is in; needs a trailing slash
 * `VERSION` - semantic version used as the tag for the resulting image
 * `DATETIME` (optional) - in case you want to build multiple images and refer to them with the same datetime string, e.g., YYYYMMDDHHmmss; (defaults to `DATETIME=$(date +'%Y%m%d%H%M')`) 
+* `FILE` (optional, defaults to 'Dockerfile') - name of the Dockerfile
 
 ## Outputs
 

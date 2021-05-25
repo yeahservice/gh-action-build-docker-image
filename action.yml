@@ -40,7 +40,6 @@ runs:
       env:
         DOCKER_FOLDER: ${{ inputs.DOCKER_FOLDER }}      
       run: |
-        printenv
         # ensure trailing slash in folder
         if [[ "${DOCKER_FOLDER}" != */ ]]; then
           echo "::error Please ensure that FOLDER has a trailing slash, e.g., ./ or api/"
